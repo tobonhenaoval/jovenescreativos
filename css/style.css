@@ -1,0 +1,152 @@
+/* SIDCUF - Estilos globales */
+/* Identidad: Negro + Azul + Tecnología */
+
+:root {
+    --negro: #050505;
+    --negro-secundario: #0b0f16;
+    --azul-principal: #0066ff;
+    --azul-claro: #00bfff;
+    --blanco: #ffffff;
+    --gris: #b8b8b8;
+    --panel: rgba(0,0,0,0.55);
+    --borde-azul: rgba(0,153,255,0.45);
+    --sombra-azul: 0 0 25px rgba(0,153,255,0.35);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Cocomat Pro', sans-serif;
+    color: var(--blanco);
+    overflow-x: hidden;
+}
+
+body {
+    background-image:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.80),
+        rgba(0,35,90,0.85)
+    ),
+    url('../img/fondogalaxia.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4 {
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+p {
+    color: var(--gris);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--blanco);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: var(--azul-claro);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--azul-principal), var(--azul-claro));
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0 0 18px rgba(0,153,255,0.45);
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(0,191,255,0.8);
+}
+
+.card,
+.info-box,
+.opcion {
+    background: var(--panel);
+    border: 1px solid var(--borde-azul);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.5);
+}
+
+input {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,153,255,0.45);
+    background: rgba(0,0,0,0.55);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: var(--azul-claro);
+    box-shadow: 0 0 15px rgba(0,191,255,0.5);
+}
+
+input::placeholder {
+    color: #aaaaaa;
+}
+
+::selection {
+    background: var(--azul-principal);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--azul-principal);
+    border-radius: 20px;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    animation: aparecer 0.8s ease;
+}
+
+.brillo {
+    box-shadow: 0 0 20px rgba(0,153,255,0.7);
+}

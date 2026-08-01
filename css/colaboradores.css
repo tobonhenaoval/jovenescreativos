@@ -1,0 +1,134 @@
+.colaboradores-intro {
+    text-align: center;
+    padding: 45px 20px;
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(15px);
+    margin: 30px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(0,174,255,0.35);
+    box-shadow: 0 0 30px rgba(0,153,255,0.25);
+}
+
+.colaboradores-intro h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px rgba(0,191,255,0.6);
+}
+
+.colaboradores-intro p {
+    font-size: 1.15rem;
+    color: #cccccc;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.universidades-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.universidad {
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+
+    width: 270px;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    border: 1px solid rgba(0,174,255,0.35);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    transition:0.3s ease;
+}
+
+.universidad:hover {
+    transform:translateY(-8px);
+
+    box-shadow:0 0 35px rgba(0,191,255,0.45);
+}
+
+.universidad img {
+    width:90px;
+    height:90px;
+
+    object-fit:contain;
+
+    border-radius:50%;
+
+    background:rgba(0,174,255,0.15);
+
+    border:2px solid #00bfff;
+
+    margin-bottom:20px;
+}
+
+.universidad h2 {
+    font-size:1.25rem;
+
+    color:#00bfff;
+
+    font-weight:bold;
+
+    margin-bottom:10px;
+}
+
+.universidad p {
+    font-size:1rem;
+
+    color:#ddd;
+
+    line-height:1.5;
+
+    margin-bottom:20px;
+}
+
+.universidad .ver-mas {
+
+    background:linear-gradient(135deg,#0066ff,#00bfff);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 25px;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    transition:0.3s ease;
+}
+
+.universidad .ver-mas:hover,
+.universidad .ver-mas:focus {
+
+    box-shadow:0 0 25px rgba(0,191,255,0.8);
+
+    transform:translateY(-3px);
+}
+
+
+@media(max-width:768px){
+
+    .colaboradores-intro h1 {
+        font-size:2rem;
+    }
+
+    .universidad {
+        width:90%;
+    }
+
+}

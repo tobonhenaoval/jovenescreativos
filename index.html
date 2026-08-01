@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDCUF - Sistema Inteligente para el Desarrollo Vocacional y Financiero</title>
+
+```
+<link rel="icon" type="image/png" href="./img/mascota.png">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/footer.css">
+<link rel="stylesheet" href="./css/header.css">
+<link rel="stylesheet" href="./css/mascota.css">
+<link rel="stylesheet" href="./css/main.css">
+```
+
+</head>
+<body>
+
+```
+<!-- HEADER -->
+<header>
+    <nav class="navbar">
+        <h1 class="logo">
+            <a href="./index.html" class="linksidcu">
+                <span class="bold">SID</span><span class="purple">CUF</span>
+            </a>
+        </h1>
+
+        <ul class="nav-links">
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./orientacion.html">Orientación Vocacional</a></li>
+            <li><a href="./finanzas.html">Educación Financiera</a></li>
+            <li><a href="./simuladores.html">Simuladores</a></li>
+            <li><a href="./test.html">Evaluación Inteligente</a></li>
+            <li><a href="./colaboradores.html">Colaboradores</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main -->
+<main>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 id="tituloPrincipal">Construye tu futuro con orientación vocacional y educación financiera</h1>
+
+            <p>
+                SIDCUF es una plataforma digital impulsada por inteligencia artificial que prepara a niños y jóvenes
+                para tomar mejores decisiones sobre su futuro académico, profesional y financiero.
+            </p>
+
+            <div class="botones">
+                <a href="./orientacion.html"><button>Orientación Vocacional</button></a>
+                <a href="./finanzas.html"><button>Educación Financiera</button></a>
+                <a href="./simuladores.html"><button>Simuladores</button></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="buscador">
+        <input type="text" placeholder="Buscar un tema, carrera o recurso financiero">
+        <button class="buscar">Buscar</button>
+    </div>
+
+    <div class="registro">
+        <button class="iniciarsesion">Iniciar sesión</button>
+        <button class="registrarse">Registrarse</button>
+    </div>
+
+    <!-- Información -->
+    <section class="info">
+
+        <div class="info-box">
+            <h2>¿Quiénes somos?</h2>
+            <p>
+                En <strong>SIDCUF</strong> (Sistema Inteligente para el Desarrollo Vocacional y Financiero)
+                somos una plataforma digital impulsada por inteligencia artificial que prepara a niños y jóvenes
+                para tomar mejores decisiones sobre su futuro académico, profesional y financiero.
+                <a href="./nosotros.html">Leer más.</a>
+            </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="info-box">
+            <h2>¿Cómo funciona?</h2>
+            <p>
+                Integramos orientación vocacional, educación financiera, simuladores interactivos y una evaluación
+                inteligente que genera recomendaciones personalizadas para cada usuario.
+                <a href="./nosotros.html">Leer más.</a>
+            </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="info-box">
+            <h2>¿Por qué SIDCUF?</h2>
+            <p>
+                Nuestro propósito es formar una generación más preparada para construir un proyecto de vida
+                sostenible, con decisiones académicas, profesionales y financieras informadas.
+                <a href="./nosotros.html">Leer más.</a>
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Suscripción -->
+    <section class="suscripcion">
+        <h3>Sé el primero en enterarte</h3>
+
+        <p>
+            Recibe por correo novedades sobre orientación vocacional, educación financiera, becas,
+            oportunidades académicas y recursos para fortalecer tu proyecto de vida.
+        </p>
+
+        <div class="suscripcion-form">
+            <input type="email" placeholder="Correo electrónico">
+            <button class="suscribirse">Suscribirse</button>
+        </div>
+    </section>
+
+</main>
+
+<!-- Mascota -->
+<div class="mascota-con-chat" aria-hidden="false">
+
+    <img src="./img/mascota.png" alt="Mascota SIDCUF" class="mascota" id="mascotaBtn" />
+
+    <div class="chat-box" id="chatBox" role="dialog" aria-label="Chat de la mascota" aria-hidden="true" tabindex="-1">
+
+        <header class="chat-header">
+
+            <div class="chat-title">
+                <img src="./img/mascota.png" alt="" class="chat-avatar" aria-hidden="true" />
+                <span>SIDCUF</span>
+            </div>
+
+            <div class="chat-controls">
+                <button class="chat-minimize" id="minimizeChat" title="Cerrar chat" aria-label="Cerrar chat">✕</button>
+            </div>
+
+        </header>
+
+        <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+
+        <form class="chat-input-area" id="chatForm" action="#" onsubmit="return false;">
+            <input
+                type="text"
+                id="chatInput"
+                class="chat-input"
+                placeholder="Escribe un mensaje..."
+                aria-label="Escribe un mensaje"
+                autocomplete="off"
+            >
+            <button type="submit" id="sendBtn" class="chat-send" aria-label="Enviar mensaje">Enviar</button>
+        </form>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <p>&copy; 2026 SIDCUF - Sistema Inteligente para el Desarrollo Vocacional y Financiero</p>
+
+        <div class="footer-links">
+            <a href="#">Política de privacidad</a>
+            <span>|</span>
+            <a href="#">Términos de uso</a>
+            <span>|</span>
+            <a href="#">Contacto</a>
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="js/mascota.js" defer></script>
+<script src="js/index.js"></script>
+```
+
+</body>
+</html>

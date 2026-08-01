@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDCUF - Simulador de Ahorro</title>
+
+```
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/header.css">
+<link rel="stylesheet" href="./css/footer.css">
+<link rel="stylesheet" href="./css/simuladorAhorro.css">
+```
+
+</head>
+<body>
+
+```
+<!-- HEADER -->
+<header>
+    <nav class="navbar">
+        <h1 class="logo">
+            <a href="./index.html" class="linksidcu">
+                <span class="bold">SID</span><span class="purple">CUF</span>
+            </a>
+        </h1>
+
+        <ul class="nav-links">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./orientacion.html">Orientación Vocacional</a></li>
+            <li><a href="./finanzas.html">Educación Financiera</a></li>
+            <li><a href="./simuladores.html">Simuladores</a></li>
+            <li><a href="./test.html">Evaluación Inteligente</a></li>
+            <li><a href="./colaboradores.html">Colaboradores</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- INTRODUCCIÓN -->
+    <section class="simulador-intro">
+
+        <h1>Simulador de Ahorro</h1>
+
+        <p>
+            Descubre cuánto dinero puedes acumular con el tiempo y planifica metas como estudiar una carrera,
+            comprar un computador, emprender un negocio o crear un fondo de emergencia. Un pequeño ahorro
+            constante puede convertirse en una gran oportunidad para tu futuro.
+        </p>
+
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="simulador-formulario">
+
+        <div class="form-card">
+
+            <h2>Calcula tu plan de ahorro</h2>
+
+            <div class="campo">
+                <label for="meta">Meta financiera</label>
+
+                <select id="meta">
+                    <option value="">Selecciona una meta</option>
+                    <option>Financiar estudios universitarios</option>
+                    <option>Comprar un computador</option>
+                    <option>Crear un fondo de emergencia</option>
+                    <option>Iniciar un emprendimiento</option>
+                    <option>Viajar</option>
+                    <option>Otra meta personal</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="ahorroMensual">Ahorro mensual (COP)</label>
+                <input type="number" id="ahorroMensual" placeholder="Ej. 150000">
+            </div>
+
+            <div class="campo">
+                <label for="plazo">Tiempo de ahorro</label>
+
+                <select id="plazo">
+                    <option>6 meses</option>
+                    <option>1 año</option>
+                    <option>2 años</option>
+                    <option>3 años</option>
+                    <option>5 años</option>
+                    <option>10 años</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="aporteExtra">Aporte inicial (opcional)</label>
+                <input type="number" id="aporteExtra" placeholder="Ej. 300000">
+            </div>
+
+            <button class="calcular-btn">Calcular ahorro</button>
+
+        </div>
+
+        <!-- RESULTADOS -->
+        <div class="resultado-card">
+
+            <h2>Proyección de ahorro</h2>
+
+            <div class="resultado-item">
+                <span>Ahorro mensual</span>
+                <strong>$150.000</strong>
+            </div>
+
+            <div class="resultado-item">
+                <span>Aporte inicial</span>
+                <strong>$300.000</strong>
+            </div>
+
+            <div class="resultado-item">
+                <span>Tiempo de ahorro</span>
+                <strong>3 años</strong>
+            </div>
+
+            <div class="resultado-item">
+                <span>Total acumulado</span>
+                <strong>$5.700.000</strong>
+            </div>
+
+            <div class="resultado-item">
+                <span>Promedio ahorrado por año</span>
+                <strong>$1.900.000</strong>
+            </div>
+
+            <div class="recomendacion">
+
+                <h3>Recomendación SIDCUF</h3>
+
+                <p>
+                    Con este plan podrías reunir aproximadamente <strong>$5.700.000</strong> en tres años,
+                    una base importante para financiar parte de una carrera universitaria, adquirir herramientas
+                    de estudio o iniciar un proyecto personal.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- METAS -->
+    <section class="metas-financieras">
+
+        <h2>Ejemplos de metas que puedes alcanzar</h2>
+
+        <div class="metas-grid">
+
+            <div class="meta-card">
+                <h3>Computador para estudiar</h3>
+                <p>
+                    Ahorrando <strong>$120.000 mensuales durante 24 meses</strong> podrías reunir aproximadamente
+                    <strong>$2.880.000</strong>.
+                </p>
+            </div>
+
+            <div class="meta-card">
+                <h3>Primer semestre universitario</h3>
+                <p>
+                    Ahorrando <strong>$300.000 mensuales durante 36 meses</strong> podrías reunir alrededor de
+                    <strong>$10.800.000</strong>.
+                </p>
+            </div>
+
+            <div class="meta-card">
+                <h3>Fondo de emergencia</h3>
+                <p>
+                    Ahorrando <strong>$200.000 mensuales durante 18 meses</strong> podrías acumular
+                    <strong>$3.600.000</strong>.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONSEJOS -->
+    <section class="consejos">
+
+        <h2>Consejos para ahorrar con éxito</h2>
+
+        <div class="consejos-grid">
+
+            <div class="consejo">
+                <h3>Ahorra primero</h3>
+                <p>Destina un porcentaje fijo de tus ingresos al ahorro antes de realizar otros gastos.</p>
+            </div>
+
+            <div class="consejo">
+                <h3>Define una meta</h3>
+                <p>Tener un objetivo claro aumenta la motivación y facilita mantener el hábito de ahorrar.</p>
+            </div>
+
+            <div class="consejo">
+                <h3>Automatiza el ahorro</h3>
+                <p>Programa una transferencia mensual para evitar gastar el dinero destinado a tus metas.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>Da el siguiente paso</h2>
+
+        <p>
+            Después de construir tu plan de ahorro, utiliza el simulador de inversión para conocer
+            cómo ese dinero podría crecer con el tiempo.
+        </p>
+
+        <a href="./simuladorInversion.html">
+            <button>Ir al simulador de inversión</button>
+        </a>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <p>&copy; 2026 SIDCUF - Sistema Inteligente para el Desarrollo Vocacional y Financiero</p>
+
+        <div class="footer-links">
+            <a href="#">Política de privacidad</a>
+            <span>|</span>
+            <a href="#">Términos de uso</a>
+            <span>|</span>
+            <a href="#">Contacto</a>
+        </div>
+
+    </div>
+
+</footer>
+```
+
+</body>
+</html>

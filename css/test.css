@@ -1,0 +1,167 @@
+.tests-main {
+    max-width: 1100px;
+    margin: 40px auto 60px;
+    padding: 0 20px;
+}
+
+.tests-intro {
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(15px);
+    padding: 40px 25px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border: 1px solid rgba(0,174,255,0.35);
+    box-shadow: 0 0 30px rgba(0,153,255,0.25);
+}
+
+.tests-intro h1 {
+    color: white;
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px rgba(0,191,255,0.6);
+}
+
+.tests-intro p {
+    color: #cccccc;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.tests-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.test-card {
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(12px);
+
+    width: 320px;
+
+    border-radius: 20px;
+
+    padding: 30px 20px;
+
+    border: 1px solid rgba(0,174,255,0.35);
+
+    box-shadow: 0 0 20px rgba(0,153,255,0.15);
+
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    transition:0.3s ease;
+}
+
+.test-card:hover {
+    transform:translateY(-8px);
+    box-shadow:0 0 35px rgba(0,191,255,0.45);
+}
+
+.test-img {
+    width:90px;
+    height:90px;
+
+    object-fit:contain;
+
+    border-radius:15px;
+
+    background:rgba(0,174,255,0.15);
+
+    border:1px solid rgba(0,191,255,0.5);
+
+    margin-bottom:20px;
+}
+
+.test-card h2 {
+    color:#00bfff;
+
+    font-size:1.35rem;
+
+    margin-bottom:15px;
+}
+
+.test-desc {
+    color:#ddd;
+
+    font-size:1rem;
+
+    line-height:1.5;
+
+    margin-bottom:25px;
+}
+
+.test-actions {
+    display:flex;
+    gap:15px;
+
+    align-items:center;
+
+    margin-top:auto;
+}
+
+.test-btn {
+    background:linear-gradient(135deg,#0066ff,#00bfff);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 25px;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    transition:0.3s ease;
+}
+
+.test-btn:hover {
+    box-shadow:0 0 25px rgba(0,191,255,0.8);
+
+    transform:translateY(-3px);
+}
+
+.test-info {
+    color:#00bfff;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    transition:0.3s ease;
+}
+
+.test-info:hover {
+    color:white;
+
+    text-shadow:0 0 10px rgba(0,191,255,0.8);
+}
+
+
+@media(max-width:768px){
+
+    .tests-intro h1 {
+        font-size:1.8rem;
+    }
+
+    .test-card {
+        width:90%;
+    }
+
+    .test-actions {
+        flex-direction:column;
+    }
+
+}
+

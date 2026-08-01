@@ -1,0 +1,291 @@
+.carreras-intro {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(15px);
+    margin: 25px;
+    border-radius: 25px;
+    border: 1px solid rgba(0,174,255,0.35);
+    box-shadow: 0 0 35px rgba(0,153,255,0.25);
+}
+
+.carreras-intro h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 20px rgba(0,191,255,0.7);
+    margin-bottom: 15px;
+}
+
+.carreras-intro p {
+    font-size: 1.15rem;
+    color: #cccccc;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+
+.busqueda-carrera {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin:35px auto;
+}
+
+
+.carrera-busqueda-input {
+    padding:14px 18px;
+    border-radius:15px;
+    border:1px solid rgba(0,191,255,0.5);
+    background:rgba(0,0,0,0.55);
+    color:white;
+    width:320px;
+}
+
+
+.carrera-busqueda-input::placeholder {
+    color:#aaa;
+}
+
+
+.carrera-busqueda-btn {
+    background:linear-gradient(135deg,#0066ff,#00bfff);
+    color:white;
+    border:none;
+    padding:13px 25px;
+    border-radius:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+
+.carrera-busqueda-btn:hover {
+    transform:translateY(-3px);
+    box-shadow:0 0 25px rgba(0,191,255,.7);
+}
+
+
+
+.areas-carreras {
+    text-align:center;
+    margin:40px 0;
+}
+
+
+.areas-carreras h2 {
+    color:white;
+    margin-bottom:20px;
+}
+
+
+.area-tabs {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+
+.area-tabs button {
+
+    background:rgba(0,0,0,.6);
+
+    color:white;
+
+    border:1px solid rgba(0,191,255,.5);
+
+    border-radius:25px;
+
+    padding:10px 25px;
+
+    cursor:pointer;
+
+}
+
+
+.area-tabs button:hover {
+
+    background:#0066ff;
+
+    box-shadow:0 0 20px rgba(0,191,255,.6);
+
+}
+
+
+
+.carreras-lista {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:30px;
+
+    padding:40px 20px;
+
+}
+
+
+
+.carrera-card {
+
+    background:rgba(0,0,0,.65);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:22px;
+
+    width:250px;
+
+    padding:25px 15px;
+
+    text-align:center;
+
+    border:1px solid rgba(0,174,255,.35);
+
+    transition:.3s;
+
+}
+
+
+.carrera-card:hover {
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 35px rgba(0,191,255,.45);
+
+}
+
+
+.carrera-card img {
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:contain;
+
+    border-radius:50%;
+
+    border:2px solid #00bfff;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.carrera-card h3 {
+
+    color:#00bfff;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.carrera-card p {
+
+    color:#ddd;
+
+    line-height:1.5;
+
+}
+
+
+
+.carrera-card p span {
+
+    display:block;
+
+    color:#00bfff;
+
+}
+
+
+
+.carrera-card .ver-detalle {
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    background:linear-gradient(135deg,#0066ff,#00bfff);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:10px 20px;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+}
+
+
+.carrera-card .ver-detalle:hover {
+
+    box-shadow:0 0 20px rgba(0,191,255,.7);
+
+}
+
+
+/* Categorías */
+
+.carrera-card.ingenieria {
+    border-left:4px solid #00bfff;
+}
+
+.carrera-card.salud {
+    border-left:4px solid #00ffcc;
+}
+
+.carrera-card.economia {
+    border-left:4px solid #00ffaa;
+}
+
+.carrera-card.sociales {
+    border-left:4px solid #0099ff;
+}
+
+.carrera-card.arte {
+    border-left:4px solid #00ccff;
+}
+
+.carrera-card.educacion {
+    border-left:4px solid #0066ff;
+}
+
+
+
+@media(max-width:700px){
+
+    .busqueda-carrera{
+
+        flex-direction:column;
+
+    }
+
+
+    .carrera-busqueda-input{
+
+        width:90%;
+
+    }
+
+
+    .carreras-intro h1{
+
+        font-size:2rem;
+
+    }
+
+}

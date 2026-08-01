@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SIDCUF - Simuladores Financieros</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/comparador.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">
+        <a href="./index.html" class="linksidcu">
+          <span class="bold">SID</span><span class="purple">CUF</span>
+        </a>
+      </h1>
+
+```
+  <ul class="nav-links">
+    <li><a href="./index.html">Inicio</a></li>
+    <li><a href="./nosotros.html">Nosotros</a></li>
+    <li><a href="./orientacion.html">Orientación Vocacional</a></li>
+    <li><a href="./finanzas.html">Educación Financiera</a></li>
+    <li><a href="./simuladores.html">Simuladores</a></li>
+    <li><a href="./test.html">Evaluación Inteligente</a></li>
+    <li><a href="./colaboradores.html">Colaboradores</a></li>
+  </ul>
+</nav>
+```
+
+  </header>
+
+  <main class="comparador-main">
+
+```
+<section class="comparador-intro">
+  <h1>Simuladores Financieros</h1>
+  <p>
+    Explora diferentes escenarios financieros para planificar tu futuro académico y económico.
+    Los simuladores de SIDCUF te ayudan a comprender cómo influyen el ahorro, el presupuesto,
+    la inversión y el costo de una carrera en tu proyecto de vida.
+  </p>
+</section>
+
+<section class="comparador-controls" aria-label="Seleccionar simulador financiero">
+
+  <form class="comparador-form" action="#" method="get" novalidate>
+
+    <div class="selector-row">
+
+      <div class="selector-group">
+        <label for="selectA">Simulador principal</label>
+
+        <select id="selectA" name="simuladorPrincipal" aria-label="Seleccionar simulador principal">
+          <option value="">-- Seleccionar simulador --</option>
+          <option value="presupuesto">Presupuesto mensual</option>
+          <option value="ahorro">Plan de ahorro</option>
+          <option value="inversion">Proyección de inversión</option>
+          <option value="costoCarrera">Costo de una carrera universitaria</option>
+        </select>
+      </div>
+
+      <div class="selector-group">
+        <label for="selectB">Objetivo financiero</label>
+
+        <select id="selectB" name="objetivoFinanciero" aria-label="Seleccionar objetivo financiero">
+          <option value="">-- Seleccionar objetivo --</option>
+          <option value="universidad">Financiar estudios universitarios</option>
+          <option value="emprendimiento">Crear un emprendimiento</option>
+          <option value="vivienda">Comprar vivienda</option>
+          <option value="vehiculo">Comprar vehículo</option>
+          <option value="fondo">Crear un fondo de emergencia</option>
+        </select>
+      </div>
+
+      <div class="selector-group">
+        <label for="selectC">Horizonte de tiempo</label>
+
+        <select id="selectC" name="horizonteTiempo" aria-label="Seleccionar horizonte de tiempo">
+          <option value="">-- Seleccionar plazo --</option>
+          <option value="1">1 año</option>
+          <option value="3">3 años</option>
+          <option value="5">5 años</option>
+          <option value="10">10 años</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="comparar-button">Simular escenario</button>
+      <button type="reset" class="reset-button">Restablecer</button>
+    </div>
+
+  </form>
+
+</section>
+
+<section class="info">
+
+  <div class="info-box">
+    <h2>Presupuesto mensual</h2>
+    <p>
+      Organiza tus ingresos y gastos para comprender cuánto puedes ahorrar cada mes y cómo mejorar
+      tus hábitos financieros.
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info-box">
+    <h2>Plan de ahorro</h2>
+    <p>
+      Descubre cuánto debes ahorrar periódicamente para alcanzar metas como estudiar una carrera,
+      comprar un computador, viajar o iniciar un proyecto.
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info-box">
+    <h2>Proyección financiera</h2>
+    <p>
+      Visualiza cómo puede crecer tu dinero con el tiempo mediante ahorro e inversión, y compara
+      distintos escenarios para tomar decisiones informadas.
+    </p>
+  </div>
+
+</section>
+```
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 SIDCUF - Sistema Inteligente para el Desarrollo Vocacional y Financiero</p>
+
+```
+  <div class="footer-links">
+    <a href="#">Política de privacidad</a>
+    <span>|</span>
+    <a href="#">Términos de uso</a>
+    <span>|</span>
+    <a href="#">Contacto</a>
+  </div>
+</div>
+```
+
+  </footer>
+
+  <script src="js/comparador.js"></script>
+
+</body>
+</html>

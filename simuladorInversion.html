@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDCUF - Simulador de Inversión</title>
+
+```
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/header.css">
+<link rel="stylesheet" href="./css/footer.css">
+<link rel="stylesheet" href="./css/simuladorInversion.css">
+```
+
+</head>
+<body>
+
+```
+<!-- HEADER -->
+<header>
+    <nav class="navbar">
+        <h1 class="logo">
+            <a href="./index.html" class="linksidcu">
+                <span class="bold">SID</span><span class="purple">CUF</span>
+            </a>
+        </h1>
+
+        <ul class="nav-links">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./orientacion.html">Orientación Vocacional</a></li>
+            <li><a href="./finanzas.html">Educación Financiera</a></li>
+            <li><a href="./simuladores.html">Simuladores</a></li>
+            <li><a href="./test.html">Evaluación Inteligente</a></li>
+            <li><a href="./colaboradores.html">Colaboradores</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- INTRODUCCIÓN -->
+    <section class="simulador-intro">
+
+        <h1>Simulador de Inversión</h1>
+
+        <p>
+            Explora cómo puede crecer tu dinero con el tiempo mediante una estrategia de inversión constante.
+            Este simulador te ayuda a comprender el efecto del interés compuesto y la importancia de comenzar
+            a invertir desde una edad temprana.
+        </p>
+
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="simulador-formulario">
+
+        <div class="form-card">
+
+            <h2>Proyección de inversión</h2>
+
+            <div class="campo">
+                <label for="montoInicial">Monto inicial (COP)</label>
+                <input type="number" id="montoInicial" placeholder="Ej. 1000000">
+            </div>
+
+            <div class="campo">
+                <label for="aporteMensual">Aporte mensual (COP)</label>
+                <input type="number" id="aporteMensual" placeholder="Ej. 200000">
+            </div>
+
+            <div class="campo">
+                <label for="rentabilidad">Rentabilidad anual estimada</label>
+
+                <select id="rentabilidad">
+                    <option>4%</option>
+                    <option>6%</option>
+                    <option>8%</option>
+                    <option>10%</option>
+                    <option>12%</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="tiempo">Tiempo de inversión</label>
+
+                <select id="tiempo">
+                    <option>1 año</option>
+                    <option>3 años</option>
+                    <option>5 años</option>
+                    <option>10 años</option>
+                    <option>15 años</option>
+                    <option>20 años</option>
+                </select>
+            </div>
+
+            <button class="calcular-btn">Calcular inversión</button>
+
+        </div>
+
+        <!-- RESULTADOS -->
+        <div class="resultado-card">
+
+            <h2>Proyección estimada</h2>
+
+            <div class="resultado-item">
+                <span>Monto inicial</span>
+                <strong>$1.000.000</strong>
+            </div>
+
+            <div class="resultado-item">
+                <span>Aporte mensual</span>
+                <strong>$200.000</strong>
+            </div>
+
+            <div class="resultado-item">
+                <span>Tiempo</span>
+                <strong>10 años</strong>
+            </div>
+
+            <div class="resultado-item">
+                <span>Rentabilidad estimada</span>
+                <strong>8% anual</strong>
+            </div>
+
+            <div class="resultado-item">
+                <span>Valor acumulado</span>
+                <strong>$37.500.000</strong>
+            </div>
+
+            <div class="resultado-item">
+                <span>Ganancia generada</span>
+                <strong>$12.500.000</strong>
+            </div>
+
+            <div class="recomendacion">
+
+                <h3>Recomendación SIDCUF</h3>
+
+                <p>
+                    Invertir de forma constante durante varios años puede generar un crecimiento significativo
+                    de tu patrimonio gracias al interés compuesto. Este tipo de planificación es especialmente útil
+                    para financiar estudios, crear un emprendimiento o alcanzar metas de largo plazo.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ESCENARIOS -->
+    <section class="escenarios">
+
+        <h2>Escenarios de crecimiento</h2>
+
+        <div class="escenarios-grid">
+
+            <div class="escenario-card">
+                <h3>Inversión conservadora</h3>
+                <p>Rentabilidad estimada: <strong>4% anual</strong></p>
+                <p>Menor riesgo y crecimiento estable a largo plazo.</p>
+            </div>
+
+            <div class="escenario-card">
+                <h3>Inversión moderada</h3>
+                <p>Rentabilidad estimada: <strong>8% anual</strong></p>
+                <p>Equilibrio entre riesgo y rendimiento para metas educativas y personales.</p>
+            </div>
+
+            <div class="escenario-card">
+                <h3>Inversión de crecimiento</h3>
+                <p>Rentabilidad estimada: <strong>12% anual</strong></p>
+                <p>Mayor potencial de crecimiento acompañado de mayor variabilidad.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- INTERÉS COMPUESTO -->
+    <section class="interes-compuesto">
+
+        <h2>¿Por qué el interés compuesto es tan importante?</h2>
+
+        <p>
+            El interés compuesto permite que las ganancias generen nuevas ganancias con el paso del tiempo.
+            Mientras más temprano comiences a ahorrar e invertir, mayor será el impacto del crecimiento acumulado
+            sobre tu patrimonio futuro.
+        </p>
+
+        <div class="ejemplo">
+
+            <h3>Ejemplo</h3>
+
+            <p>
+                Si inviertes <strong>$200.000 mensuales durante 10 años</strong> con una rentabilidad anual del
+                <strong>8%</strong>, el valor acumulado puede superar los <strong>$37 millones</strong>, incluso
+                si el dinero aportado originalmente fue mucho menor.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>Relaciona tu inversión con tu carrera</h2>
+
+        <p>
+            Utiliza el simulador de costo de carrera para estimar cuánto necesitarías ahorrar o invertir para
+            financiar tus estudios universitarios.
+        </p>
+
+        <a href="./simuladorCarrera.html">
+            <button>Ir al simulador de carrera</button>
+        </a>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <p>&copy; 2026 SIDCUF - Sistema Inteligente para el Desarrollo Vocacional y Financiero</p>
+
+        <div class="footer-links">
+            <a href="#">Política de privacidad</a>
+            <span>|</span>
+            <a href="#">Términos de uso</a>
+            <span>|</span>
+            <a href="#">Contacto</a>
+        </div>
+
+    </div>
+
+</footer>
+```
+
+</body>
+</html>
